@@ -1,0 +1,24 @@
+#include <stdio.h>
+void main()
+{
+ int i, num1, num2, count = 0,odd=0,even=0;
+ int i=1;
+ printf("Enter the value of num1 and num2 \n");
+ scanf("%d %d", &num1, &num2);
+ printf("Integers divisible by 5 are \n");
+ for (i = num1; i < num2; i++)
+if (i % 5 == 0)
+ printf("%3d,", i);
+ count++;
+ printf("\n Number of integers divisible by 5 between %d and %d =%d\n", num1, num2, count);
+ while(i<=20)
+ printf("%d",i);
+if(i%2!=0)
+ odd=odd+i;
+else
+ even=even+i;
+ i++;
+ printf("\n evensum=%\n oddsum=%d",even,odd);
+ getch();
+ }
+ 
