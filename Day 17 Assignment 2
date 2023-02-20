@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main(){
+int n,ele,i,h;
+scanf("%d",&n);
+i=1;
+h=0;
+while (i<=n){
+scanf("%d",&ele);
+if(i==1)h=ele;
+if(ele>h)
+h=ele;
+i++;
+}
+printf("\n Highest %d",h);
+}
